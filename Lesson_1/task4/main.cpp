@@ -5,19 +5,20 @@ using namespace std;
 int main()
 {
     int money = 0;
-    cout << "Skolko deneg ti poluchaesh? ";
+    int the_size=0;
+    cout << "What is your salary? ";
     cin >> money;
     if (money < 1000){
-        cout << "Rabotai bolshe";
+        cout << "You have to work more";
     }
     if(money > 999){
         if(money < 1000000){
-            cout << "Tak derzhat!";
+            cout << "Keep it up!";
         }
         if(money > 999999){
-            cout << "Ti millioner!";
+            cout << "Yo are a millioner!";
         }
     }
-    cout << "...no ti molodec!";
+    cout << "...well, good job!";
     return 0;
 }
