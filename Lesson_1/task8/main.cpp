@@ -20,9 +20,7 @@ int main()
     	for(int j = 0; j <= _size - i; j++){
     		cout << " ";
     	}
-    	for(int j = 0; j < 1; j++){
-    		cout << "*";
-    	}
+    	cout << "*";
     }
     return 0;
 }
