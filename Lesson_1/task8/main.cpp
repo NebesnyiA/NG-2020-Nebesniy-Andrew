@@ -12,7 +12,7 @@ int main()
     		cout << " ";
     	}
     	for(int j = _size - 2*i; j <= _size; j++){
-    		cout << "*";
+    		cout << "^";
     	}
     	cout << endl;
     }
@@ -20,7 +20,7 @@ int main()
     	for(int j = 0; j <= _size - i; j++){
     		cout << " ";
     	}
-    	cout << "*";
+    	cout << "|";
     }
     return 0;
 }
