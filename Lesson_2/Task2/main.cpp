@@ -17,20 +17,20 @@ int main()
     {
         cout << "Enter the number of credit card: ";
         cin >> i;
-        if(i >= 10)
+        if(i >= 10 || i < 0)
         {
-            cout << "You entered the false number. Try one more time." << endl;
+            cout << "You entered the false number of credit card. Try one more time." << endl;
             continue;
         }
         cout << "Enter the sum of money to add to the card: ";
         cin >> sum;
         credit_card[i] = sum + credit_card[i];
-        cout << "Your balance in each credit card is: ";
+        cout << "Your balance in each credit card is: " << endl;
         for (int i = 0; i<10; i++)
         {
             cout  << credit_card[i] << "\t ";
         }
         cout << endl;
-    }while(i >= 0);
+    }while(i >= 0 || i < 0);
     return 0;
 }

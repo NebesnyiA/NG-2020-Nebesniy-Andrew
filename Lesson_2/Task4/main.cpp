@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
     int Stars[5];
-    int StarsForDrawing[5];
 
     for(int i = 0; i < 5; i++)
     {

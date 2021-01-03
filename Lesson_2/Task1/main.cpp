@@ -23,11 +23,8 @@ int main()
             cout << "There is the school with such number in the list." << endl;
             break;
         }
-        if(school_number[i] != UserSchool)
-        {
-            if (i == 9) cout << "There is no school with such number in this list!" << endl;
-            continue;
-        }
+        if(school_number[i] != UserSchool && i == 9)  cout << "There is no school with such number in this list!" << endl;
+
     }
 
     return 0;
