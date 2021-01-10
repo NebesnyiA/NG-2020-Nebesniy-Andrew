@@ -10,7 +10,7 @@ void Cleaner(int credit_card[], int size)
     }
 }
 
-int Balance(int credit_card[], int size)
+void Balance(int credit_card[], int size)
 {
     cout << "Your balance is: " << endl;
     for(int i = 0; i < size; i++)
@@ -20,7 +20,7 @@ int Balance(int credit_card[], int size)
     cout << endl;
 }
 
-int ATM(int credit_card[], int size, int sum, int number_of_card)
+void ATM(int credit_card[], int size, int sum, int number_of_card)
 {
     cout << "Enter the sum of money: ";
     cin >> sum;
@@ -34,7 +34,7 @@ int ATM(int credit_card[], int size, int sum, int number_of_card)
     Balance(credit_card, 10);
 }
 
-int Checker(int credit_card[], int size, int number_of_card, int sum)
+void Checker(int credit_card[], int size, int number_of_card, int sum)
 {
     cout << "Enter the number of credit card: ";
     cin >> number_of_card;
