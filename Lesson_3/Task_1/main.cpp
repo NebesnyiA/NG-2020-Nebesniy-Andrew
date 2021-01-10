@@ -34,5 +34,14 @@ int main()
         }
 
     }
-    cout << words;
+
+    if(words == 0)
+    {
+        cout << "There are no words in your string (" << words << ").";
+    }
+    else
+    {
+        if(words == 1) cout << "There is only " << words << " word in your string.";
+        if(words > 1) cout << "There are " << words << " words in your string.";
+    }
 }
