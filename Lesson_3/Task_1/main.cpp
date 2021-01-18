@@ -29,7 +29,7 @@ int main()
             if(marker == 1)
             {
                 marker = 0;
-                words = words + 1;
+                words = words++;
             }
         }
 
