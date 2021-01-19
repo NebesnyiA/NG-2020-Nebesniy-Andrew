@@ -1,34 +1,23 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 void Input(char Str[], int size)
 {
-    cout << "Enter your string: " << endl;
+    cout << "Enter the string (I will show the number of words in it): " << endl;
     cin.getline(Str, size);
 }
 
-void SizeChecker(char Str[], int size, int Size)
+void Result(int Words)
 {
-    for(int i = 0; Str[i] != '\0'; i++)
-    {
-        Size++;
-    }
+    cout << "Result: " << Words;
+
 }
 
-void Condition(char Symbol)
+void WordCounter(char Str[], int size, int Flag, int Words)
 {
-    Symbol >= 'A' && Symbol <= 'Z' || Symbol >= 'a' && Symbol <= 'z';
-}
-
-void ReturnResult(int Words)
-{
-    cout << "Your result is: " << Words;
-}
-
-int WordsCounter(char Str[], int size, int Words, int Flag, int Size)
-{
-    for(int i = 0; i < Size; i++)
+    for(int i = 0; i <= strlen(Str); i++)
     {
         if(Str[i] >= 'A' && Str[i] <= 'Z' || Str[i] >= 'a' && Str[i] <= 'z')
         {
@@ -39,11 +28,11 @@ int WordsCounter(char Str[], int size, int Words, int Flag, int Size)
             if(Flag == 1)
             {
                 Flag = 0;
-                Words = Words + 1;
+                Words++;
             }
         }
     }
-    return Words;
+    Result(Words);
 }
 
 int main()
@@ -51,11 +40,9 @@ int main()
     char Str[100];
     int Words = 0;
     int Flag = 0;
-    int Size = 0;
 
     Input(Str, 100);
-    SizeChecker(Str, 100, Size);
-    WordsCounter(Str, 100, Words, Flag, Size);
-    cout << Words;
+    WordCounter(Str, 100, Flag, Words);
+
     return 0;
 }
