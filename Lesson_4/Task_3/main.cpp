@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 
 using namespace std;
 
@@ -17,7 +16,7 @@ void Result(int Words)
 
 void WordCounter(char Str[], int size, int Flag, int Words)
 {
-    for(int i = 0; i <= strlen(Str); i++)
+    for(int i = 0; i <= 100; i++)
     {
         if(Str[i] >= 'A' && Str[i] <= 'Z' || Str[i] >= 'a' && Str[i] <= 'z')
         {
