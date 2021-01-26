@@ -15,15 +15,8 @@ int main()
     for(int i = 0; Str[i] != '\0'; i++)
     {
         if(Str[i] >= 'a' && Str[i] <= 'z')
-        {
-            Symbol = Str[i] - 32;
-            cout << Symbol;
-        }
-        else
-        {
-            Symbol = Str[i];
-            cout << Symbol;
-        }
+            Str[i] = Str[i] - 32;
     }
+    cout << Str;
     return 0;
 }
