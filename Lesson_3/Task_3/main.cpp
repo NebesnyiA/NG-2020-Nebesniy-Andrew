@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
     char Str[100];
-    char Symbol;
 
     cout << "Enter your string, and see some black magic: " << endl;
     cin.getline(Str, 100);
@@ -15,8 +14,9 @@ int main()
     for(int i = 0; Str[i] != '\0'; i++)
     {
         if(Str[i] >= 'a' && Str[i] <= 'z')
-            Str[i] = Str[i] - 32;
+            cout << char(Str[i] - 32);
+        else
+            cout << Str[i];
     }
-    cout << Str;
     return 0;
 }
