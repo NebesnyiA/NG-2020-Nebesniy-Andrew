@@ -4,19 +4,19 @@ using namespace std;
 
 int main()
 {
-    char Str[100];
+    char UserSentence[100];
 
     cout << "Enter your string, and see some black magic: " << endl;
-    cin.getline(Str, 100);
+    cin.getline(UserSentence, 100);
 
     cout << "BOOM! Now we have: " << endl;
 
-    for(int i = 0; Str[i] != '\0'; i++)
+    for(int iterator = 0; UserSentence[iterator] != '\0'; iterator++)
     {
-        if(Str[i] >= 'a' && Str[i] <= 'z')
-            cout << char(Str[i] - 32);
+        if(UserSentence[iterator] >= 'a' && UserSentence[iterator] <= 'z')
+            cout << char(UserSentence[iterator] - 32);
         else
-            cout << Str[i];
+            cout << UserSentence[iterator];
     }
     return 0;
 }
