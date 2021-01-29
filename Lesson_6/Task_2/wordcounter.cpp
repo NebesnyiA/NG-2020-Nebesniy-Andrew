@@ -21,7 +21,7 @@ void WordCounter::WCounter()
     QString Chars = ui->UserText->toPlainText();
     ui->SB_Words->setValue(0);
 
-    for(int i = 0; i < ui->UserText->toPlainText().length(); i++)
+    for(int i = 0; i <= ui->UserText->toPlainText().length(); i++)
     {
         if((Chars[i] >= 'A' && Chars[i] <= 'Z') || (Chars[i] >= 'a' && Chars[i] <= 'z'))
             Flag = 1;
